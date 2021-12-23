@@ -1,0 +1,30 @@
+{
+    "configurations": {
+        "default": {
+            "proxy": "https://testnet-gateway.elrond.com",
+            "chainID": "T"
+        }
+    },
+    "contract":{
+        "deploy":{
+            "verbose": true,
+            "bytecode": "output/nft-evolution.wasm",
+            "recall-nonce": true,
+            "pem": "../wallet/wallet-owner.pem",
+            "gas-limit": 59999999,
+            "arguments": ["01", "354907886180016427871128457170794034", "427093854101435599688910111691322680", "1364097349689344466571286214423095", 7],
+            "send": true,
+            "outfile": "deploy-testnet.interaction.json"
+        },
+        "upgrade": {
+            "verbose": true,
+            "bytecode": "output/nft-evolution.wasm",
+            "recall-nonce": true,
+            "pem": "../wallet/wallet-owner.pem",
+            "gas-limit": 59999999,
+            "arguments": ["01", "354907886180016427871128457170794034", "427093854101435599688910111691322680", "1364097349689344466571286214423095", 7],
+            "send": true,
+            "outfile": "deploy-testnet.interaction.json"
+        }
+     }
+}

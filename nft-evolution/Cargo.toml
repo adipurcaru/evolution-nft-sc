@@ -1,0 +1,15 @@
+[package]
+name = "nft-evolution"
+version = "0.0.2"
+authors = [ "Catalin Balasoiu", "Adrian Purcaru"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/nft_evolution.rs"
+
+[dependencies.elrond-wasm]
+version = "0.22.10"
+
+[dev-dependencies.elrond-wasm-debug]
+version = "0.22.10"
